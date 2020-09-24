@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138903317-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-138903317-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="Hugo 0.16">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Don&#39;t panic">
+    <base href=".">
+    <title>
+      Andres Castano
+    </title>
+    <link rel="canonical" href="https://themes.gohugo.io/theme/cocoa/">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/pygments.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/override.css">
+    <link rel="manifest" href="/manifest.json">
+    <style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style>
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <div class="content">
+          <span><div class="name">Andrés Castaño <small>(afcastano)</small></div></span>
+          <div class="subheader">
+            <div>Software developer</div>
+            <div class ="spacer">&nbsp;-&nbsp;</div>
+            <div><a href="https://squareup.com" target="_blank">Square</a> - <a href="https://cash.app" target="_blank">Cash App</a></div>
+            <div class ="spacer">&nbsp;-&nbsp;</div>
+            <div>Melbourne, Australia</div>
+          </div>
+        </div>
+      </div>
+	  </section>
+    <section class="icons">
+      <div class="container">
+        <div class="content">
+          <a href="https://twitter.com/afcastano" target="_blank">
+            <i class="fa fa-twitter fa-lg"></i>
+          </a>
+          <a href="https://www.instagram.com/afcastano/" target="_blank">
+            <i class="fa fa-instagram fa-lg"></i>
+          </a>
+          <a href="https://au.linkedin.com/in/afcastano" target="_blank">
+            <i class="fa fa-linkedin fa-lg"></i>
+          </a>
+          <a href="https://github.com/afcastano" target="_blank">
+            <i class="fa fa-github fa-lg"></i>
+          </a>
+          <a href="https://medium.com/@afcastano" target="_blank">
+            <i class="fa fa-medium fa-lg"></i>
+          </a>
+          <a href="https://stackoverflow.com/users/3686036/afcastano" target="_blank">
+            <i class="fa fa-stack-overflow fa-lg"></i>
+          </a>
+          <a href="https://www.facebook.com/andres.castano" target="_blank">
+            <i class="fa fa-facebook fa-lg"></i>
+          </a>
+          <a href="mailto:andresfelipecastano@gmail.com" target="_blank">
+            <i class="fa fa-envelope fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="navbar">
+      <ul class="nav">
+        {%- for entry in collections.all | eleventyNavigation %}
+          <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %} "><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </section>
+    <section class="main">
+      <div class="container">
+        <div class="content">
+        {{ content | safe }}
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+service: default
+skip_files:
+- node_modules/
+
+handlers:
+- url: /css
+  static_dir: _site/css
+  secure: always
+
+- url: /(.+)/
+  static_files: _site/\1/index.html
+  upload: _site/.*/index.html
+  secure: always
+
+- url: /
+  static_files: _site/index.html
+  upload: _site/index.html
+  secure: always

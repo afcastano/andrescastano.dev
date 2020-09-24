@@ -1,0 +1,85 @@
+/* override css styles of the main theme here */
+section.header .name {
+	text-transform: none;
+	font-size: 22px
+}
+
+section.header .name small {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+section.header a.company {
+	color: #111;
+	text-decoration: underline;
+}
+
+section.header .container div.subheader {
+	  text-align: center;
+}
+
+section.header .container div.subheader div.spacer{
+	  display: none;
+}
+
+ul.blog {
+	padding-left: 10px;
+}
+
+section.main .container .content .post-item {
+	list-style-position: inherit;
+	margin-bottom: 10px;
+}
+
+dd {
+	margin-bottom: 10px;
+}
+
+@media (min-width: 600px) {
+	dl {
+		width: 100%;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+	}
+	dt {
+		float: left;
+		width: 30%;
+		text-align: right;
+		/* adjust the width; make sure the total of both is 100% */
+		padding: 0;
+		margin-bottom: 10px;
+	}
+	dd {
+		float: left;
+		width: 70%;
+		/* adjust the width; make sure the total of both is 100% */
+		padding: 0;
+		margin: 0;
+		margin-bottom: 10px;
+		padding-left: 10px;
+	}
+
+	ul.blog {
+		padding-left: 0;
+	}
+
+	section.header .container div.subheader {
+	  display: flex;
+	}	
+
+	section.header .container div.subheader div.spacer {
+	  display: inherit;
+	}
+
+	section.main .container .content .post-item {
+		margin-bottom: 0px;
+	}
+	
+	body {
+	  -webkit-justify-content: inherit;
+	  -moz-justify-content: inherit;
+	  -ms-justify-content: inherit;
+	  justify-content: inherit;
+	}
+}

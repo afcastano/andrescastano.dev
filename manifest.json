@@ -1,0 +1,14 @@
+{
+  "name": "andrescastano",
+  "short_name": "andrescastano",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Andres Castano software blog",
+  "icons": [{
+    "src": "android-icon-192x192.png",
+    "sizes": "256x256",
+    "type": "image/x-icon"
+  }],
+  "scope": "/"
+}
